@@ -4,7 +4,7 @@
 
 @import "small";
 
-//35em is also 560px (if basefont is 16px)
+//36em is also 560px (if basefont is 16px)
 @media only screen and (min-width: 36rem) {
 	@import "medium";
 }
