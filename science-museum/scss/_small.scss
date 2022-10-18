@@ -25,9 +25,48 @@ header {
         padding-left: .5rem;
         color: $primaryColor;
     }
+    h2{
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+        color: $secondaryColor;
+        padding-left: .5rem;
+    }
 } // end header
 
 /* NAVIGATION STUFF GOES HERE  */
+div#navWrapper{
+    background-color: rgb(231, 231, 231);
+}
+nav{
+    ul li a{
+        color: #333;
+        text-decoration: none;
+        display: block;
+        padding: 0.9rem 2vw;
+        border-top: solid 1px rgba(0, 0, 0, 0.2);
+    }// end of ul li a
+
+    ul li a:hover{
+        background-color: #e0e0e0;
+    }//end hover
+
+    ul li.active a{background-color: lighten($primaryColor, 40%);}
+} // end of the nav
+
+main{
+    display: block;
+    figure img{width: 100%;}
+    figure{
+    width: 100%;
+    margin: 0;
+    }
+    figcaption{
+        text-align: center;
+        font-size: .8rem;
+    }
+}
+
+
 
 
 
