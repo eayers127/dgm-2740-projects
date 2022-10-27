@@ -51,6 +51,7 @@ nav{
     }//end hover
 
     ul li.active a{background-color: lighten($primaryColor, 40%);}
+    ul li:last-child a {border-right: none;}
 } // end of the nav
 
 main{

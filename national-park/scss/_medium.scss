@@ -21,7 +21,11 @@ div#headerWrapper{
 
 
 /*----------- MAIN --------------*/
-
+main{
+    div.card{
+       flex-basis: 48%; 
+    }
+}
 
 
 /*----------- FOOTER --------------*/
