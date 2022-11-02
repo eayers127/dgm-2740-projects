@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+
+<title>Band Page</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+ <h1>Band Name</h1>
+ <h2>Slogan</h2>
+        <nav>
+            <button id = "hamburgerButton">&#9776;</button>
+            <ul id = "primaryNav">
+                <li class="active"><a href="#">Members</a></li>
+                <li><a href="#">Concerts</a></li>
+                <li><a href="#">Book Us</a></li>
+                <li><a href="#">Backstory</a></li>    
+            </ul>
+        </nav>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+
+    
+  
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Members</h1>
+        <div class = "bandMembers">
+            <div>
+                <h2>Freddie Mercury</h2>
+                <figure class = 'myRound'>
+                    <img src="images/car01.jpg" alt="Car 1">
+                    <figcaption>Car 1</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar neque laoreet suspendisse interdum consectetur libero. Augue mauris augue neque gravida. Dictum sit amet justo donec enim diam vulputate. Vel turpis nunc eget lorem dolor sed. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. Volutpat lacus laoreet non curabitur. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Felis eget nunc lobortis mattis aliquam faucibus purus.</p>
+            </div>
+            <div>
+                <h2>Brian May</h2>
+                <p>Diam maecenas ultricies mi eget mauris. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Pellentesque nec nam aliquam sem et tortor consequat id porta. Volutpat est velit egestas dui id ornare. Lectus mauris ultrices eros in. Platea dictumst vestibulum rhoncus est pellentesque elit. Elit ut aliquam purus sit amet luctus venenatis lectus. Volutpat maecenas volutpat blandit aliquam etiam. In dictum non consectetur a erat nam at. </p>
+            </div>
+            <div>
+                <h2>John Deacon</h2>
+                <p>Vitae ultricies leo integer malesuada nunc vel risus. A erat nam at lectus urna duis convallis convallis tellus. Id diam maecenas ultricies mi eget mauris. Congue quisque egestas diam in arcu. Varius morbi enim nunc faucibus. Scelerisque varius morbi enim nunc. Sit amet cursus sit amet dictum sit. Cursus euismod quis viverra nibh.</p>
+            </div>
+            <div>
+                <h2>Roger Taylor</h2>
+                <p>Justo nec ultrices dui sapien eget mi proin. Adipiscing elit pellentesque habitant morbi tristique. Sit amet aliquam id diam. Pharetra massa massa ultricies mi quis hendrerit dolor. Vitae aliquet nec ullamcorper sit amet. Donec adipiscing tristique risus nec. Massa enim nec dui nunc mattis enim ut tellus elementum.</p>
+            </div>
+
+            <div class = 'gallery'>
+                <h2>Performances</h2>
+                <figure><img alt="Car" class="lazy" data-src="images/car01.jpg" /></figure>
+                <figure><img alt="Car" class="lazy" data-src="images/car02.jpg" /></figure>
+                <figure><img alt="Car" class="lazy" data-src="images/car03.jpg" /></figure>
+                <figure><img alt="Car" class="lazy" data-src="images/car04.jpg" /></figure>
+                <figure><img alt="Car" class="lazy" data-src="images/car05.jpg" /></figure>
+                <figure><img alt="Car" class="lazy" data-src="images/car06.jpg" /></figure>
+            </div>
+         
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2022 &bull; Ethan Ayers &bull; 801-884-3379
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+        elements_selector: '.lazy',
+        threshold: 0
+        });
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
