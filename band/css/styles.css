@@ -346,7 +346,8 @@ nav ul {
   position: absolute;
   right: 0;
   width: 100%;
-  display: none; }
+  display: none;
+  list-style: none; }
 nav ul.open {
   display: block; }
 nav ul li {
@@ -370,17 +371,33 @@ main {
 
 div.bandMembers {
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: 49%; }
+  flex-wrap: wrap; }
 
-div.bandMembers h2 p {
-  flex-basis: 46%;
-  margin: 1rem 2%; }
+div.member {
+  flex-basis: 100%; }
 
-figure.myRoud img {
+figure.myRound img {
   float: right;
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
+  margin: .5rem; }
+
+figure.myPlay img {
+  float: left;
+  shape-outside: polygon(0 0, 100% 0%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  margin: .5rem; }
+
+figure.myArc img {
+  float: right;
+  shape-outside: circle(100% at 100% 0%);
+  clip-path: circle(100% at 100% 0%);
+  margin: .5rem; }
+
+figure.myTriangle img {
+  float: left;
+  shape-outside: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
   margin: .5rem; }
 
 section.gallery figure {
@@ -427,14 +444,14 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
-  div.bandMembers h2 p {
-    flex-basis: 29%; }
+  div.member {
+    flex-basis: 48%; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, main, footer {
-    max-width: 64rem;
+    max-width: 75rem;
     margin: auto; }
 
   /*----------- BODY --------------*/
@@ -467,6 +484,9 @@ footer {
       color: white; }
 
   /*----------- MAIN --------------*/
+  div.member {
+    flex-basis: 8%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 

@@ -1,5 +1,5 @@
 header, main, footer {
-        max-width: 64rem;
+        max-width: 75rem;
         margin:auto;
 }
 
@@ -49,7 +49,9 @@ nav {
 
 
 /*----------- MAIN --------------*/
-
+div.member{
+        flex-basis: 8%
+    }
 
 
 /*----------- FOOTER --------------*/

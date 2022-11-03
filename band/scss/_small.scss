@@ -39,6 +39,7 @@ nav {
         right: 0;
         width: 100%;
         display: none;
+       list-style: none;
     }
 
     ul.open{
@@ -77,18 +78,37 @@ main {
 div.bandMembers{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 49%;
 }
 
-div.bandMembers h2 p{
-    flex-basis: 46%;
-    margin: 1rem 2%;
+div.member{
+    flex-basis: 100%;
 }
 
-figure.myRoud img{
+figure.myRound img{
     float: right;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+    margin: .5rem;
+}
+
+figure.myPlay img{
+    float: left;
+    shape-outside: polygon(0 0, 100% 0%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+    margin: .5rem;
+}
+
+figure.myArc img{
+    float: right;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: circle(100% at 100% 0%);
+    margin: .5rem;
+}
+
+figure.myTriangle img{
+    float: left;
+    shape-outside: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
     margin: .5rem;
 }
 
