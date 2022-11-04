@@ -6,6 +6,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* BODY  */
 body {
+    display: grid;
 	font-family: $defaultFont;
 	font-size: 16px;
 	font-weight: $lightWeight;
@@ -14,11 +15,15 @@ body {
 
 
 /* HEADER  */
+div#headerWrapper{grid-row-start: 1;}
 header {
     display: grid;
-    grid-template-columns: 51px auto;
+    grid-template-columns: 51px auto 44px;
     align-items: center;
 	padding: .5rem 2vw;
+    div#phone{
+        display: none;
+    }
 	h1 {
         font-size: 1.6rem;
         font-weight: $lightWeight;
@@ -28,6 +33,119 @@ header {
 } // end header
 
 /* NAVIGATION STUFF GOES HERE  */
+div#navWrapper{grid-row-start: 4;}
+
+div#hamburger a, div#closex a{
+    display: block;
+    padding: .8rem 2vw;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    text-align: right;
+}
+
+nav{
+    height: 100vh;
+    ul{
+        border-bottom: 1px solid #eee;
+    }
+    ul li{
+        border-top: 1px solid #eee;
+    }
+
+    ul li a{
+        display: block;
+        color: #333;
+        padding: .9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }
+    ul li.active a{
+        background-color: lighten($primaryColor, 45%);
+    }
+
+    ul li a:hover{
+        color: $primaryColor;
+    }
+}
+
+/* Main */
+div#mainWrapper{grid-row-start: 2;}
+
+div.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.card{
+    border: 1px solid rgb(190, 190, 190); 
+    background-color: rgb(173, 173, 173);
+    text-align: center;
+    section{
+        background-color: #444;
+        color: rgb(225, 225, 225);
+        padding-top: 3rem;
+        padding: 1rem 0;
+    }
+}
+button{
+    background-color: $primaryColor;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: $primaryColor;
+}
+#buttonClass{
+    border-radius: 6%;
+}
+
+/* Columns */
+div.flexed{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    padding: 0 $gutter;
+}
+@for $i from 0 through 12{
+    $w:($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+}
+
+.jumbotron{
+    background-color: $accent;
+    p{
+        color: white;
+        font-size: 200%;
+        padding: 2rem 0;
+    }
+}
+
+/* Footer */
+
+div.social{
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    padding: 1rem 0;
+}
+
+div.social a{
+    flex-basis: 25%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+div.social a:hover{
+    color: rgb(7, 176, 255);
+}
+
+div#footerWrapper{
+    grid-row-start: 3;
+    background-color: #1b1b1b;
+}
 
 
 

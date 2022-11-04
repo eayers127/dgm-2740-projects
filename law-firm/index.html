@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Navigation Example</title>
+	<title>Law Firm</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
 
@@ -18,7 +18,9 @@
 <div id="headerWrapper">
 	<header>
         <img src="images/logo1x.png" alt="logo">
-		<h1>Design Thinking</h1>
+		<h1>Justice Law</h1>
+        <div id="hamburger"><a href="#closex">&#9776;</a></div>
+        <div id="phone"><a href="tel:18004442343">1-800-444-2343</a></div>
 	</header>
 </div><!-- end header wrapper -->
 
@@ -26,10 +28,11 @@
     
 <div id="navWrapper">
     <nav>
+        <div id="closex"><a href="#hamburger">x</a></div>
         <ul>
         <li><a href="#">Clients</a>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Best Practices</a></li>
+        <li class ="active"><a href="#">Best Practices</a></li>
         <li><a href="#">Our Team</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
@@ -38,9 +41,86 @@
 
 <div id="mainWrapper">
     <main>
-        <picture class="hero">
-            <img src="images/hero.webp" width="1600" height="600">
-        </picture>
+        <div class = "grid flexed">
+        <div class="card small-12 medium-3 large-3">
+            <section>Perry Mason</section>
+            <img>
+            <div class = "paragraphContainer">
+            <p>Learn about the history behind this beautiful park. Take a look at what we have learned from the arches.</p>
+            </div>
+            <button class = "buttonClass" href="#">Learn More</button>
+        </div>
+        <div class="card small-12 medium-3 large-3">
+            <section>Malcom Turnbull</section>
+            <img>
+            <div class = "paragraphContainer">
+            <p>Take a look at the images people have sent in. Vote for your favorites!</p>
+            </div>
+            <button class = "buttonClass" href="#">Learn More</button>
+        </div>
+        <div class="card small-12 medium-3 large-3">
+            <section>Alan Shore</section>
+            <img>
+            <div class = "paragraphContainer">
+            <p>Have more questions? We can help. Reach out to us now.</p>
+            </div>
+            <button class = "buttonClass" href="#">Learn More</button>
+        </div>
+        <div class="card small-12 medium-3 large-3">
+                <section>Alicia Florrick</section>
+                <img>
+                <div class = "paragraphContainer">
+                <p>Have more questions? We can help. Reach out to us now.</p>
+                </div>
+                <button class = "buttonClass" href="#">Learn More</button>
+        </div>
+    </div>
+
+        <div class = "flexed">
+            <div class = "column small-12 large-3">
+                <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
+            </div>
+
+            <div class = "column small-12 jumbotron large-6">
+                <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
+            </div>
+
+            <div class = "column small-12 large-3">
+                <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
+            </div>
+
+        </div>
+
+        <div class = "flexed">
+            <div class = "column small-12 medium-4">
+                <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
+            </div>
+
+            <div class = "column small-12 medium-4">
+                <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
+            </div>
+
+            <div class = "column small-12 medium-4">
+                <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
+            </div>
+
+        </div>
+
+        <div class = "flexed">
+            <div class = "small-0 medium-1 large-0"></div>
+            <div class = "column small-12 medium-5 large-6">
+                <h3>Missing Case of Watson</h3>
+                <p>Where did he go?</p>
+                <div class = "readon"><a href = "#">Read On</a></div>
+            </div>
+
+            <div class = "column small-12 medium-5 large-6">
+                <h3>Missing Case of George</h3>
+                <p>Where did he go?</p>
+                <div class = "readon"><a href = "#">Read On</a></div>
+            </div>
+
+        </div>
         
         <h1>Best Practices</h1>
         <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
@@ -53,7 +133,20 @@
 
         <p>Intrinsicly simplify transparent sources rather than principle-centered solutions. Phosfluorescently engineer world-class technologies before scalable markets. Dynamically myocardinate.</p>
 
-
+        <div class = "flexed social">
+            <div class="column small-3">
+                <a href = "#" class="fa-brands fa-square-facebook"></a>
+            </div>
+            <div class="column small-3">
+                <a href = "#" class="fa-brands fa-square-twitter"></a>
+            </div>
+            <div class="column small-3">
+                <a href = "#" class="fa-brands fa-square-instagram"></a>
+            </div>
+            <div class="column small-3">
+                <a href = "#" class="fa-brands fa-square-youtube"></a>
+            </div>
+        </div>
 
     </main>
 </div><!-- end main wrapper -->
@@ -65,5 +158,6 @@
     </footer>
 </div> <!-- end footer wrapper -->
    
+<script src="https://kit.fontawesome.com/59e38dadde.js" crossorigin="anonymous"></script>
 </body>
 </html> 
