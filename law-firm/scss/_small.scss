@@ -61,11 +61,11 @@ nav{
         text-align: right;
     }
     ul li.active a{
-        background-color: lighten($primaryColor, 45%);
+        background-color: lighten($primaryColor, 25%);
     }
 
     ul li a:hover{
-        color: $primaryColor;
+        color: $secondaryColor;
     }
 }
 
@@ -87,17 +87,18 @@ div.card{
         padding: 1rem 0;
     }
 }
+
 button{
     background-color: $primaryColor;
     color: white;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    border-radius: 8%;
 }
 button:hover{
     cursor: pointer;
     background-color: white;
     color: $primaryColor;
-}
-#buttonClass{
-    border-radius: 6%;
 }
 
 /* Columns */
@@ -122,6 +123,25 @@ div.flexed{
     }
 }
 
+.boxes{
+    background-color: #444;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    border: solid white;
+    font-weight: $normalWeight;
+}
+
+.faces{
+    max-width: 198px;
+    max-height: 220px;
+}
+
+.blogs{
+    max-width: 300px;
+    max-height: 240px;
+}
+
 /* Footer */
 
 div.social{
@@ -139,7 +159,7 @@ div.social a{
 }
 
 div.social a:hover{
-    color: rgb(7, 176, 255);
+    color: lighten($primaryColor, 40%);
 }
 
 div#footerWrapper{

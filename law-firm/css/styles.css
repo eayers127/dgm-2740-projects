@@ -120,7 +120,7 @@ header {
     font-size: 1.6rem;
     font-weight: 300;
     padding-left: .5rem;
-    color: #cc7a26; }
+    color: #ae1e1e; }
 
 /* NAVIGATION STUFF GOES HERE  */
 div#navWrapper {
@@ -147,9 +147,9 @@ nav {
     text-decoration: none;
     text-align: right; }
   nav ul li.active a {
-    background-color: #f9ecdf; }
+    background-color: #e56767; }
   nav ul li a:hover {
-    color: #cc7a26; }
+    color: #969696; }
 
 /* Main */
 div#mainWrapper {
@@ -170,16 +170,16 @@ div.card {
     padding: 1rem 0; }
 
 button {
-  background-color: #cc7a26;
-  color: white; }
+  background-color: #ae1e1e;
+  color: white;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  border-radius: 8%; }
 
 button:hover {
   cursor: pointer;
   background-color: white;
-  color: #cc7a26; }
-
-#buttonClass {
-  border-radius: 6%; }
+  color: #ae1e1e; }
 
 /* Columns */
 div.flexed {
@@ -235,6 +235,22 @@ div.flexed {
     font-size: 200%;
     padding: 2rem 0; }
 
+.boxes {
+  background-color: #444;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  border: solid white;
+  font-weight: 500; }
+
+.faces {
+  max-width: 198px;
+  max-height: 220px; }
+
+.blogs {
+  max-width: 300px;
+  max-height: 240px; }
+
 /* Footer */
 div.social {
   background-color: #535353;
@@ -249,7 +265,7 @@ div.social a {
   text-decoration: none; }
 
 div.social a:hover {
-  color: #07b0ff; }
+  color: #f0a8a8; }
 
 div#footerWrapper {
   grid-row-start: 3;
@@ -263,7 +279,7 @@ main p {
 main h1 {
   padding: 1rem 2vw .5rem 2vw;
   font-size: 1.5rem;
-  color: #265b7d;
+  color: #969696;
   font-weight: 300; }
 main .hero {
   width: 100%; }
@@ -294,12 +310,12 @@ footer {
       display: block;
       justify-self: end; }
       header div#phone a {
-        color: #265b7d;
+        color: #969696;
         text-decoration: none;
         font-weight: 500;
         font-size: 1.5rem; }
       header div#phone a:hover {
-        color: #cc7a26; }
+        color: #ae1e1e; }
 
   /* NAVIGATION STUFF GOES HERE  */
   nav {
@@ -373,11 +389,6 @@ footer {
     margin: auto; }
 
   /* NAVIGATION STUFF GOES HERE  */
-  nav ul li a {
-    padding: 0.2rem 1rem;
-    border-radius: 10px;
-    margin: .5rem 0; }
-
   /* Main */
   /* Columns */
   .large-0 {
