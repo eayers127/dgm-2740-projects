@@ -1,0 +1,16 @@
+header, nav, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+
+div.imageGrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .lead{
+        grid-column: 1 / span 3;
+        grid-row: 1 /span 2;
+    }
+}
