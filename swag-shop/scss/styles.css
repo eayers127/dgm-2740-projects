@@ -319,32 +319,10 @@ body {
   font-size: 16px;
   font-family: Verdana, sans-serif; }
 
-#pageWrapper {
-  position: relative;
-  overflow-x: hidden; }
-
-.moveOver > .content {
-  transform: translateX(-180px); }
-
-.content {
-  transition: transform 500ms ease; }
-
 /*----------- HEADER --------------*/
 header {
-  padding: .5rem 2vw;
-  background-color: #ddd;
-  align-items: center;
-  grid-template-columns: 51px auto 48px; }
-  header button {
-    width: 48px;
-    height: 48px;
-    margin: 0;
-    align-self: start;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    text-align: right;
-    color: #444; }
+  padding: .5rem 2%;
+  background-color: #ddd; }
 
 header h1 {
   margin: 0; }
@@ -355,34 +333,26 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
-  width: 180px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transform: translateX(100%); }
-  nav div {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 1.1rem;
-    background-color: #666;
-    color: #fff; }
+  background-color: #666; }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0; }
 
+nav ul li {
+  float: left;
+  width: 25%; }
+
 nav ul li a {
   display: block;
   background-color: #444;
   color: #eee;
-  border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
-  padding: .9rem .5rem;
+  border-left: 1px solid #777;
+  padding: .5rem 0;
   text-decoration: none;
-  text-align: right; }
+  font-size: .9rem;
+  text-align: center; }
 
 nav ul li:first-child a {
   border-left: none; }
@@ -399,57 +369,6 @@ nav ul li.active a {
 main {
   padding: 0 2%;
   min-height: 10rem; }
-
-/*----------- FORM --------------*/
-form fieldset {
-  margin: 2rem 0;
-  border: 1px solid blue;
-  border-radius: 10px;
-  padding: .5rem 2%; }
-
-form legend {
-  color: #445ba9;
-  margin: 0 1rem;
-  padding: 0 .5rem; }
-
-form label.top, form div {
-  display: block;
-  padding-top: 1rem;
-  color: red;
-  font-size: 0.8rem; }
-
-form label.top input, form label.top select {
-  -webkit-appearance: none;
-  display: block;
-  font-size: 1rem;
-  border: solid 1px #cccccc;
-  border-radius: 4px;
-  padding: .75rem;
-  color: #555;
-  width: 100%;
-  max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1); }
-
-form label.sbs {
-  display: block;
-  padding: .75rem 0;
-  color: #555; }
-
-form input.submitBtn {
-  border: none;
-  background-color: red;
-  color: white;
-  border-radius: 1rem;
-  padding: .75rem 1.5rem;
-  margin: 0 0 2rem 2%;
-  width: 96%;
-  max-width: 20rem; }
-
-form label.top input:required {
-  border-left: red solid 6px; }
-
-form label.top input:required:valid {
-  border-left: green solid 6px; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -493,28 +412,7 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  #hamburgerBtn {
-    display: none; }
-
-  nav {
-    position: static;
-    transform: translateX(0);
-    width: auto; }
-    nav div {
-      display: none; }
-    nav ul {
-      display: flex;
-      margin-left: 2%;
-      border-left: 1px solid rgba(0, 0, 0, 0.2); }
-    nav ul li a {
-      border: none;
-      border-right: 1px solid rgba(0, 0, 0, 0.2);
-      padding: .6rem 1.5rem; }
-
   /*----------- MAIN --------------*/
-  form label.sbs {
-    padding: .4rem 0; }
-
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 

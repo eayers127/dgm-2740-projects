@@ -12,11 +12,30 @@ header, nav, main, footer {
 
 
 /*----------- NAVIGATION --------------*/
+#hamburgerBtn{display: none;}
 
+nav{
+        position: static;
+        transform: translateX(0);
+        width: auto;
+        div{display:none;}
+        ul{
+                display: flex;
+                margin-left: 2%;
+                border-left: 1px solid rgba(0,0,0,0.2);
+        }
+        ul li a{
+                border: none;
+                border-right: 1px solid rgba(0,0,0,0.2);
+                padding: .6rem 1.5rem;
+        }
+}
 
 
 /*----------- MAIN --------------*/
-
+form label.sbs{
+        padding: .4rem 0;
+}
 
 
 /*----------- FOOTER --------------*/
