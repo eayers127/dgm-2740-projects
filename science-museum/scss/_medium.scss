@@ -1,3 +1,13 @@
+header{
+h2{
+    visibility: visible;
+    font-size: 1.2rem;
+    font-weight: $normalWeight;
+    color: $secondaryColor;
+    padding-left: .5rem;
+}
+}
+
 /* NAVIGATION STUFF GOES HERE  */
 nav {
     ul{
