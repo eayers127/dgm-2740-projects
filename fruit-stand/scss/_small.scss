@@ -96,11 +96,10 @@ main {
 
 
 /* FOOTER  */
-#footerWrapper {background-color: rgb(255, 55, 0);}
+#footerWrapper {background-color: darken($primaryColor, 20%);}
 footer {
     font-size: .85rem;
 	padding: 1rem 0;
 	color: rgb(255, 255, 255);
 	text-align: center;
-	a{color: #eee;}
 }
