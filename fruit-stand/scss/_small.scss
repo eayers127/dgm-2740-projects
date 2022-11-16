@@ -9,7 +9,7 @@ body{
 
 header {
     display: grid;
-    grid-template-columns: 51px auto;
+    grid-template-columns: 100px auto;
     align-items: center;
 	padding: .5rem 2vw;
 	h1 {
@@ -27,22 +27,26 @@ header {
 /* NAVIGATION STUFF GOES HERE  */
 
 nav{
-    ul li{
-        justify-content: right;
-    }
+    background-color: #bbb;
     ul li a{
         color: #333;
         text-decoration: none;
         display: block;
+        text-align: center;
         padding: 0.9rem 2vw;
         border-top: solid 1px rgba(0, 0, 0, 0.2);
     }// end of ul li a
 
     ul li a:hover{
-        background-color: #e0e0e0;
+        background-color: #ff8181;
+        font-weight: bold;
+        text-decoration: underline;
     }//end hover
 
-    ul li.active a{background-color: rgb(255, 153, 98);}
+    ul li.active a{
+        background-color: darken($primaryColor, 10%);
+        color:rgb(255, 255, 255);
+    }
 } // end of the nav
 
 main{
@@ -92,11 +96,11 @@ main {
 
 
 /* FOOTER  */
-#footerWrapper {background-color: #1b1b1b; }
+#footerWrapper {background-color: rgb(255, 55, 0);}
 footer {
     font-size: .85rem;
 	padding: 1rem 0;
-	color: #bbb;
+	color: rgb(255, 255, 255);
 	text-align: center;
 	a{color: #eee;}
 }
