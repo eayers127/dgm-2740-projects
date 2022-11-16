@@ -120,10 +120,6 @@ header {
 /* MAIN  */
 main {
   /*DIV*/ }
-  main p {
-    padding: .5rem 2vw;
-    color: #333;
-    line-height: 125%; }
   main h1 {
     padding: 1rem 2vw .5rem 2vw;
     font-size: 1.5rem;
@@ -142,7 +138,7 @@ main {
   main .cards div {
     text-align: center;
     flex-basis: 100%;
-    border: solid 2px white; }
+    border: 2px solid white; }
   main .cards img {
     width: 100%;
     padding: 4rem 0 0 0; }
