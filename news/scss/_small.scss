@@ -131,3 +131,16 @@ footer {
 	text-align: center;
 	a{color: #eee;}
 }
+div.footerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    span{
+        display: block;
+        text-align: center;
+        font-size: .75rem;
+    }
+    .lead, .secondary{padding: .5rem 2vw;}
+    .secondary img, .lead img{width: 100%;}
+    .lead{grid-column: 1/span 2;}
+}

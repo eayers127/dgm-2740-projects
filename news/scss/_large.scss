@@ -14,3 +14,20 @@ div.imageGrid{
         grid-row: 1 /span 2;
     }
 }
+
+div.footerGrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    // .title{
+    //     grid-column: 1 / span 1;
+    // }
+    // .shows{
+    //     grid-column: 2 / span 1;
+    // }
+    // .tools{
+    //     grid-column: 3 / span 1;
+    // }
+    // .personalities{
+    //     grid-column: 4 / span 1;
+    // }
+}

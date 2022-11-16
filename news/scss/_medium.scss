@@ -31,3 +31,24 @@ div.imageGrid{
     span{font-size: 1rem;}
     .lead{grid-column: 1 / span 3;}
 }
+
+div.footerGrid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    span{font-size: 1rem;}
+    .title{
+        grid-column: 1 / span 1;
+        grid-row: 1 /span 1;
+    }
+    .shows{
+        grid-column: 1 / span 1;
+        grid-row: 2 /span 1;
+    }
+    .tools{
+        grid-column: 2 / span 1;
+        grid-row: 3 /span 1;
+    }
+    .personalities{
+        grid-column: 2 / span 1;
+    }
+}
