@@ -51,13 +51,14 @@ nav{
 
     ul li.active a{
         background-color: lighten($primaryColor, 10%);
-        color:darken($secondaryColor, 20%);
+        color:darken($secondaryColor, 50%);
     }
     ul li:last-child a {border-right: none;}
 } // end of the nav
 
 main{
     display: block;
+    h1{color: $secondaryColor;}
 }
 
 main figure img{width: 100%;}
