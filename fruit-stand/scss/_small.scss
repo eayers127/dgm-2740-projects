@@ -38,7 +38,7 @@ nav{
     }// end of ul li a
 
     ul li a:hover{
-        background-color: #ff8181;
+        background-color: lighten($primaryColor, 30%);
         font-weight: bold;
         text-decoration: underline;
     }//end hover
