@@ -210,10 +210,11 @@ footer {
 
 div.footerGrid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr) span;
-    grid-template-columns-display: block;
-    grid-template-columns-text-align: center;
-    grid-template-columns-font-size: .75rem; }
+  grid-template-columns: repeat(1, 1fr); }
+  div.footerGrid span {
+    display: block;
+    text-align: center;
+    font-size: .75rem; }
   div.footerGrid .lead, div.footerGrid .secondary {
     padding: .5rem 2vw; }
   div.footerGrid .secondary img, div.footerGrid .lead img {
