@@ -19,7 +19,18 @@ div#headerWrapper{
 
 
 /*----------- NAVIGATION --------------*/
-
+nav{
+    button{display: none;}
+    ul, ul.open{
+        display: flex;
+        justify-content: right;
+        border: none;
+        margin-right: 2vw;
+    }
+    ul li{
+        border: none;
+    }
+}//end nav
 
 
 /*----------- MAIN --------------*/

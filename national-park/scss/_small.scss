@@ -23,41 +23,56 @@ div#headerWrapper{
     background-image: url(../images/header-small.jpg);
     height: 140px;
     padding: 1rem 2vw;
+    
+}
+header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-header {
-    padding: .5rem 2%;
+    // padding: .5rem 2%;
+    height: 140px;
     color:rgb(255, 255, 255);
     
-    
+    h1 {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 1rem 2vw;
+        font-size: 1.4rem;
+        width: 100vw;
+
+        
+    }
 }
-header h1 {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 1rem 2vw;
-    font-size: 1.4rem;
-    
-}
-header h2 {margin: 0; font-weight: normal;}
+
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: rgb(226, 173, 116);
-    
+    button{
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }//end button
 }
+
+
 
 div#navWrapper{
     background-color: rgb(226, 173, 116);
 }
 nav ul {
+    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    border-top: solid 1px rgba(255,255,255,0.3);
+}
+
+nav ul.open{
+    display: block;
 }
 nav ul li {
-    float: right;
-    width: 25%;
+    border-bottom: solid 1px rgba(255,255,255,0.3);
 }
 nav ul li a {
     display: block;
@@ -67,7 +82,7 @@ nav ul li a {
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
-    text-align: center;
+    text-align: left;
 }
 nav ul li:first-child a {border-left: none;}
 
@@ -86,6 +101,7 @@ main {
     div.grid{
         display: flex;
         flex-wrap: wrap;
+        a{text-decoration: none;}
     }
     div.card{
         border: 1px solid rgb(190, 190, 190); 
@@ -130,9 +146,9 @@ main {
     }
     @keyframes bounce{
         0%{bottom: 0px; animation-timing-function: ease-out;}
-        25%{bottom: 40px; animation-timing-function: ease-in;}
+        25%{bottom: 20px; animation-timing-function: ease-in;}
         50%{bottom: 0px; animation-timing-function: ease-out;}
-        75%{bottom: 20px; animation-timing-function: ease-in;}
+        75%{bottom: 10px; animation-timing-function: ease-in;}
         100%{bottom: 0px;}
     }
 }
