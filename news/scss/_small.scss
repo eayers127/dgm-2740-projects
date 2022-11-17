@@ -133,8 +133,7 @@ footer {
 }
 div.footerGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr)
     span{
         display: block;
         text-align: center;

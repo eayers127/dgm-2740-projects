@@ -16,18 +16,7 @@ div.imageGrid{
 }
 
 div.footerGrid{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     
-    // .title{
-    //     grid-column: 1 / span 1;
-    // }
-    // .shows{
-    //     grid-column: 2 / span 1;
-    // }
-    // .tools{
-    //     grid-column: 3 / span 1;
-    // }
-    // .personalities{
-    //     grid-column: 4 / span 1;
-    // }
+  justify-content: space-between;
 }
