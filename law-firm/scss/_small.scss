@@ -61,11 +61,13 @@ nav{
         text-align: right;
     }
     ul li.active a{
-        background-color: lighten($primaryColor, 25%);
+        background-color: lighten($primaryColor, 20%);
+        color:#111;
     }
 
     ul li a:hover{
-        color: $secondaryColor;
+        background-color: $secondaryColor;
+        color: white;
     }
 }
 
@@ -85,6 +87,9 @@ div.card{
         color: rgb(225, 225, 225);
         padding-top: 3rem;
         padding: 1rem 0;
+    }
+    a{
+        color:#1b1b1b;
     }
 }
 
@@ -147,6 +152,7 @@ div.flexed{
 .blogs{
     max-width: 300px;
     max-height: 240px;
+    
 }
 
 /* Footer */
