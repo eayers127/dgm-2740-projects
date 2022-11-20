@@ -332,9 +332,10 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2vw;
-  background-color: #ddd;
+  background-color: #328bff;
   align-items: center;
-  grid-template-columns: 51px auto 48px; }
+  display: grid;
+  grid-template-columns: 120px auto 48px; }
   header button {
     width: 48px;
     height: 48px;
@@ -344,7 +345,7 @@ header {
     border: none;
     font-size: 1.5rem;
     text-align: right;
-    color: #444; }
+    color: black; }
 
 header h1 {
   margin: 0; }
@@ -355,7 +356,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
+  background-color: silver;
   width: 180px;
   position: absolute;
   top: 0;
@@ -367,7 +368,7 @@ nav {
     text-align: center;
     padding: 1.5rem;
     font-size: 1.1rem;
-    background-color: #666;
+    background-color: #646464;
     color: #fff; }
 
 nav ul {
@@ -377,7 +378,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  background-color: #444;
+  background-color: #646464;
   color: #eee;
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
   padding: .9rem .5rem;
@@ -389,7 +390,7 @@ nav ul li:first-child a {
 
 nav ul li a:hover {
   background-color: #eee;
-  color: #333; }
+  color: #ff1111; }
 
 nav ul li.active a {
   background-color: #000;
@@ -403,7 +404,7 @@ main {
 /*----------- FORM --------------*/
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid blue;
+  border: 1px solid mediumblue;
   border-radius: 10px;
   padding: .5rem 2%; }
 
@@ -415,7 +416,7 @@ form legend {
 form label.top, form div {
   display: block;
   padding-top: 1rem;
-  color: red;
+  color: #646464;
   font-size: 0.8rem; }
 
 form label.top input, form label.top select {
@@ -437,7 +438,7 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: red;
+  background-color: #328bff;
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -445,11 +446,17 @@ form input.submitBtn {
   width: 96%;
   max-width: 20rem; }
 
+form input.submitBtn:hover {
+  cursor: pointer;
+  color: #328bff;
+  background-color: white;
+  border: 1px solid #328bff; }
+
 form label.top input:required {
   border-left: red solid 6px; }
 
 form label.top input:required:valid {
-  border-left: green solid 6px; }
+  border-left: #328bff solid 6px; }
 
 /*----------- FOOTER --------------*/
 footer {
