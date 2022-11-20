@@ -18,7 +18,7 @@ body {
 div#headerWrapper{grid-row-start: 1;}
 header {
     display: grid;
-    grid-template-columns: 51px auto 44px;
+    grid-template-columns: 100px auto 44px;
     align-items: center;
 	padding: .5rem 2vw;
     div#phone{
@@ -105,6 +105,11 @@ button:hover{
 div.flexed{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 2rem;
+    p{
+        padding-left: 2%;
+    }
+    h2{padding-top:.5rem;}
 }
 .column{
     padding: 0 $gutter;
@@ -115,16 +120,18 @@ div.flexed{
 }
 
 .jumbotron{
-    background-color: $accent;
+    background-color: darken($accent, 40%);
     p{
         color: white;
-        font-size: 200%;
         padding: 2rem 0;
+    }
+    h2{
+        color:white;
     }
 }
 
 .boxes{
-    background-color: #444;
+    background-color: darken($accent, 30%);
     text-align: center;
     padding: 2rem;
     color: white;
@@ -145,9 +152,10 @@ div.flexed{
 /* Footer */
 
 div.social{
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(163, 163, 163);
     display: flex;
     padding: 1rem 0;
+    margin-top: 1rem;
 }
 
 div.social a{
@@ -159,13 +167,15 @@ div.social a{
 }
 
 div.social a:hover{
-    color: lighten($primaryColor, 40%);
+    color: lighten($primaryColor, 20%);
 }
 
 div#footerWrapper{
     grid-row-start: 3;
     background-color: #1b1b1b;
+    
 }
+
 
 
 

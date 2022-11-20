@@ -3,7 +3,7 @@
     border-bottom: 1px solid #eee;
 }
 header{
-    grid-template-columns: 51px auto auto;
+    grid-template-columns: 100px auto auto;
     div#phone{
         display:block;
         justify-self: end;
@@ -36,6 +36,7 @@ div#hamburger, div#closex{
 
 /* Main */
 // main{
+//     display:grid;
 //     div.card{
 //        flex-basis: 21%; 
 //     }

@@ -111,7 +111,7 @@ div#headerWrapper {
 
 header {
   display: grid;
-  grid-template-columns: 51px auto 44px;
+  grid-template-columns: 100px auto 44px;
   align-items: center;
   padding: .5rem 2vw; }
   header div#phone {
@@ -184,7 +184,12 @@ button:hover {
 /* Columns */
 div.flexed {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-top: 2rem; }
+  div.flexed p {
+    padding-left: 2%; }
+  div.flexed h2 {
+    padding-top: .5rem; }
 
 .column {
   padding: 0 2vw; }
@@ -229,14 +234,15 @@ div.flexed {
   flex-basis: 100%; }
 
 .jumbotron {
-  background-color: #303131; }
+  background-color: #203541; }
   .jumbotron p {
     color: white;
-    font-size: 200%;
     padding: 2rem 0; }
+  .jumbotron h2 {
+    color: white; }
 
 .boxes {
-  background-color: #444;
+  background-color: #305164;
   text-align: center;
   padding: 2rem;
   color: white;
@@ -253,9 +259,10 @@ div.flexed {
 
 /* Footer */
 div.social {
-  background-color: #535353;
+  background-color: #a3a3a3;
   display: flex;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  margin-top: 1rem; }
 
 div.social a {
   flex-basis: 25%;
@@ -265,7 +272,7 @@ div.social a {
   text-decoration: none; }
 
 div.social a:hover {
-  color: #f0a8a8; }
+  color: #e15151; }
 
 div#footerWrapper {
   grid-row-start: 3;
@@ -305,7 +312,7 @@ footer {
     border-bottom: 1px solid #eee; }
 
   header {
-    grid-template-columns: 51px auto auto; }
+    grid-template-columns: 100px auto auto; }
     header div#phone {
       display: block;
       justify-self: end; }
