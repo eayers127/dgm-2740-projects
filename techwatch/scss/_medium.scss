@@ -22,8 +22,15 @@ nav{height: auto;}
 
 
 /*----------- MAIN --------------*/
-
-
+main{
+    h1{padding-left: 0;}
+}
+div.tabletGrid{
+    grid-template-areas: 
+    "firstParagraph firstImage"
+    "secondImage secondParagraph"
+    "thirdParagraph thirdImage";
+}
 
 /*----------- FOOTER --------------*/
     

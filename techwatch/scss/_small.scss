@@ -24,9 +24,15 @@ body {
 /*----------- HEADER --------------*/
 header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 100px auto;
     padding: .5rem 2%;
-    background-color: #ffa8f0;
-    h1 {margin: 0;}
+    background-color: darken(#b8ddff, 20%);
+    h1 {
+        margin: 0; 
+        padding-top: 2rem;
+        font-family: 'Share Tech Mono', monospace;
+    }
     h2 {margin: 0; font-weight: normal;}
 }
 
@@ -45,7 +51,7 @@ a.myjump{
 
 nav {
     grid-area: navigation;
-    background-color: #b68aff;
+    background-color: #dba06c;
     height: 100vh;
 }
 nav ul {
@@ -61,8 +67,7 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: rgba(0,0,0,0.2);
-    color: #fff;
+    color: #000;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -75,7 +80,7 @@ nav ul li a:hover {
     color: #000;
 }
 nav ul li.active a {
-    background-color: rgba(0,0,0,0.6);
+    background-color: darken(#dba06c, 20%);
     color: #fff;
 }
 
@@ -83,7 +88,7 @@ nav ul li.active a {
 /*----------- HAMBURGER --------------*/
 div#hamburger {
     grid-area: hamburger;
-    background-color: #feff98; 
+    background-color: #dba06c; 
 }
 
 
@@ -93,15 +98,38 @@ main {
     padding: 0 2%;
     min-height: 10rem;
     background-color: #b8ddff;
-    h1 {margin: 0; padding: 1rem 0 0 0;}
-    p {margin: 0; padding: .5rem 0;}
+    h1 {margin: 0; padding: 1rem;}
+    p {margin: 0; padding: 1rem 0;}
+    img{padding: 1rem;}
 }
+
+div.tabletGrid{
+    display: grid;
+    grid-template-areas: 
+    "firstImage"
+    "firstParagraph"
+    "secondImage"
+    "secondParagraph"
+    "thirdImage"
+    "thirdParagraph";
+}//end grid
+.firstImage{grid-area: firstImage;}
+.secondImage{grid-area: secondImage;}
+.thirdImage{grid-area: thirdImage;}
+
+.firstParagraph{grid-area: firstParagraph;}
+.secondParagraph{grid-area: secondParagraph;}
+.thirdParagraph{grid-area: thirdParagraph;}
+
+//.firstTablet{grid-area: firstTablet;}
+//.secondTablet{grid-area: secondTablet;}
+//.thirdTablet{grid-area: thirdTablet;}
 
 
 /*----------- FOOTER --------------*/
 footer {
     grid-area: footer;
-    background-color: #b5ff98;
+    background-color: #dba06c;
     padding: .5rem 2%;
     text-align: center;
 }

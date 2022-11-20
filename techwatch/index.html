@@ -12,6 +12,14 @@
 
 <!-- STYLE SHEETS -->
 <link href="css/styles.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
      
 </head>
 <body>
@@ -19,6 +27,8 @@
 <!-- HEADER HERE -->
 	<header>
         <img src="images/logo.png" alt="logo">
+
+        <h1>Techwatch</h1>
     </header>
 
     
@@ -40,20 +50,35 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <h1>Tablets New to the Market</h1>
-        <h3>Tablet 3000</h3>
-        <p>Appropriately implement extensive alignments with highly efficient platforms. Conveniently envisioneer sustainable supply chains and competitive partnerships. Authoritatively impact functional intellectual capital for B2B information. Competently formulate next-generation communities through technically sound expertise. Energistically matrix resource-leveling strategic theme areas with focused infomediaries.</p>
-        <h3>Tablet 4000</h3>
-        <p>Appropriately implement extensive alignments with highly efficient platforms. Conveniently envisioneer sustainable supply chains and competitive partnerships. Authoritatively impact functional intellectual capital for B2B information. Competently formulate next-generation communities through technically sound expertise. Energistically matrix resource-leveling strategic theme areas with focused infomediaries.</p>
-        <h3>Tablet 5000</h3>
-        <p>Appropriately implement extensive alignments with highly efficient platforms. Conveniently envisioneer sustainable supply chains and competitive partnerships. Authoritatively impact functional intellectual capital for B2B information. Competently formulate next-generation communities through technically sound expertise. Energistically matrix resource-leveling strategic theme areas with focused infomediaries.</p>
-
         
+
+        <h1>Tablets New to the Market</h1>
+        
+        <div class = "tabletGrid">
+            <div class="firstParagraph">
+        <h3 class="firstTablet">Tablet 4000</h3>
+        <p >Appropriately implement extensive alignments with highly efficient platforms. Conveniently envisioneer sustainable supply chains and competitive partnerships. Authoritatively impact functional intellectual capital for B2B information. Competently formulate next-generation communities through technically sound expertise. Energistically matrix resource-leveling strategic theme areas with focused infomediaries.</p>
+        </div>
+        <img src="images/tablet-4000.png" alt="tablet 4000" class="firstImage">
+
+        <div class="secondParagraph">
+        <h3>Hybrid Tablet 4500</h3>
+        <p>Appropriately implement extensive alignments with highly efficient platforms. Conveniently envisioneer sustainable supply chains and competitive partnerships. Authoritatively impact functional intellectual capital for B2B information. Competently formulate next-generation communities through technically sound expertise. Energistically matrix resource-leveling strategic theme areas with focused infomediaries.</p>
+        </div>
+        <img src="images/tablet-4500.png" alt="tablet 4500" class="secondImage">
+
+        <div class="thirdParagraph">
+        <h3>Tablet 5000</h3>
+        <p >Appropriately implement extensive alignments with highly efficient platforms. Conveniently envisioneer sustainable supply chains and competitive partnerships. Authoritatively impact functional intellectual capital for B2B information. Competently formulate next-generation communities through technically sound expertise. Energistically matrix resource-leveling strategic theme areas with focused infomediaries.</p>
+        </div>
+        <img src="images/tablet-5000.png" alt="tablet 5000" class="thirdImage">
+
+        </div>
     </main>
     
 <!-- FOOTER HERE -->   
     <footer>
-        &copy; 2022 &bull; Ethan Ayers &bull; 123-555-6789
+        &copy; 2022 &bull; Ethan Ayers &bull; 801-234-5432
     </footer>
 
     
@@ -63,5 +88,27 @@
     </div>
     
 </div>
+
+<script type="application/ld+json">
+    {
+     "@context":"https://schema.org",
+      "@type":"LocalBusiness",
+      "image":"https://eayers127.github.io/techwatch/images/logo.png",
+      "name":"Techwatch",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"",
+        "addressLocality":"Orem",
+        "addressRegion":"UT",
+        "postalCode":"84009",
+        "addressCountry":"US"
+      },
+      "url":"https://eayers127.github.io/techwatch/",
+      "telephone":"8012345432",
+      "priceRange":"$500-$1000",
+      "openingHours":"Mo-Fr 09:00-16:00"
+    }
+    
+  </script>
 </body>
 </html>
