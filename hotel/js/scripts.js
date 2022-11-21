@@ -27,6 +27,10 @@ for(i = 0; i < myList.length; i++){
   cardInfo.appendChild(addressTag);
   cardInfo.appendChild(phoneTag);
   cardInfo.appendChild(cityTag);
+
+  let myCarIcon = document.createElement("img");
+  myCarIcon.src = 
+  myCarIcon.className = "icon"
   
 
 
@@ -57,6 +61,3 @@ for(i = 0; i < myList.length; i++){
     
     
 }); //end of "then" fat arrow function
-
-let myTag = document.createElement("p");
-myTag.textContent="hello world";

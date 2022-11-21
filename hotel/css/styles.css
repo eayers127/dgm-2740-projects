@@ -387,7 +387,7 @@ div.info {
   display: grid;
   grid-template-columns: 1fr 1fr; }
 
-div span ion-icon {
+.icon {
   float: left;
   font-size: 1.5rem; }
 
