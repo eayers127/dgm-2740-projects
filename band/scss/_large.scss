@@ -10,13 +10,14 @@ header, main, footer {
 /*----------- HEADER --------------*/
 
 header{
-        grid-template-columns: 51px auto auto;
+        grid-template-columns:120px auto auto;
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
         button{display: none;}
-        justify-self: end;
+        padding-top: 1.5rem;
+        #primaryNav{justify-self: end;}
         ul, ul.open{
                 position: relative;
                 display: flex;
@@ -37,21 +38,28 @@ nav {
         }
 
         ul li a:hover{
-                background-color: #eee;
+                background-color: rgb(255, 255, 203);
                 color: #333!important;
         }
 
         ul li.active a{
-                color: white;
+                color: rgb(0, 0, 0);
 
         }
 }
 
 
 /*----------- MAIN --------------*/
+main{}
 div.member{
-        flex-basis: 8%
+        flex-basis: 17.5%;
+        width: 17.5rem;
+        p{padding: 1.5rem;}
     }
+    .bandMembers{
+        p{padding: 1.5rem;}
+    }
+
 
 
 /*----------- FOOTER --------------*/

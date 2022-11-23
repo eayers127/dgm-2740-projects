@@ -321,15 +321,14 @@ body {
 
 /*----------- HEADER --------------*/
 header {
+  display: grid;
+  grid-template-columns: 120px auto;
   padding: .5rem 2%;
   background-color: #ddd; }
 
 header h1 {
-  margin: 0; }
-
-header h2 {
   margin: 0;
-  font-weight: normal; }
+  padding-top: 1.5rem; }
 
 /*----------- NAVIGATION --------------*/
 nav button {
@@ -342,7 +341,7 @@ nav button {
   color: #333;
   padding: .5rem 2vw .5rem 1rem; }
 nav ul {
-  background-color: gold;
+  background-color: #ffee8f;
   position: absolute;
   right: 0;
   width: 100%;
@@ -356,11 +355,11 @@ nav ul li a {
   display: block;
   padding: .9rem 2vw;
   font-weight: 300px;
-  color: rgba(255, 255, 255, 0.9);
+  color: black;
   text-decoration: none;
   text-align: right; }
 nav ul li.active a {
-  background-color: #b59900; }
+  background-color: #cab53b; }
 nav ul li a:hover {
   background-color: #ccad00; }
 
@@ -384,7 +383,7 @@ figure.myRound img {
 
 figure.myPlay img {
   float: left;
-  shape-outside: polygon(0 0, 100% 0%, 0 100%);
+  shape-outside: polygon(0 0, 100% 0%, 50% 100%);
   clip-path: polygon(0 0, 100% 0%, 50% 100%);
   margin: .5rem; }
 
@@ -399,18 +398,6 @@ figure.myTriangle img {
   shape-outside: polygon(0 0, 100% 0, 0 100%);
   clip-path: polygon(0 0, 100% 0, 0 100%);
   margin: .5rem; }
-
-section.gallery figure {
-  width: 100%;
-  height: 0;
-  padding-bottom: 60%;
-  position: relative;
-  margin: 0; }
-
-section.gallery figure img {
-  width: 100%;
-  height: auto;
-  position: absolute; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -457,13 +444,15 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   header {
-    grid-template-columns: 51px auto auto; }
+    grid-template-columns: 120px auto auto; }
 
   /*----------- NAVIGATION --------------*/
   nav {
-    justify-self: end; }
+    padding-top: 1.5rem; }
     nav button {
       display: none; }
+    nav #primaryNav {
+      justify-self: end; }
     nav ul, nav ul.open {
       position: relative;
       display: flex;
@@ -478,14 +467,20 @@ footer {
       margin-left: .2rem;
       transition: all .5s ease; }
     nav ul li a:hover {
-      background-color: #eee;
+      background-color: #ffffcb;
       color: #333 !important; }
     nav ul li.active a {
-      color: white; }
+      color: black; }
 
   /*----------- MAIN --------------*/
   div.member {
-    flex-basis: 8%; }
+    flex-basis: 17.5%;
+    width: 17.5rem; }
+    div.member p {
+      padding: 1.5rem; }
+
+  .bandMembers p {
+    padding: 1.5rem; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
