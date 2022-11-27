@@ -45,6 +45,7 @@ for(i = 0; i < myList.length; i++){
 
     let myImageTag = document.createElement("img");
     myImageTag.src = myList[i].photo;
+    myImageTag.alt = "hotel image"
     myImageTag.className="hotels"
 
     let myCaptionTag = document.createElement("figcaption");
