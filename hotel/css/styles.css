@@ -333,17 +333,20 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
+  background-color: #999999;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 999; }
+  nav span {
+    padding: .5rem; }
 
 nav ul {
-  display: flex; }
+  display: flex;
+  list-style: none; }
 
 nav ul li {
-  flex-basis: 33.3%; }
+  flex-basis: 31.3%; }
 
 nav ul li a {
   display: block;
@@ -351,15 +354,16 @@ nav ul li a {
   color: #eee;
   text-transform: uppercase;
   text-decoration: none;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 nav ul li a:hover {
-  background-color: #eee;
+  background-color: #00a6cb;
   color: #333; }
 
 nav ul li.active a {
-  background-color: #000;
-  color: #fff; }
+  background-color: #18d5ff;
+  color: black; }
 
 /*----------- MAIN --------------*/
 main {
@@ -379,7 +383,13 @@ div#myCards figure {
     background-color: rgba(255, 255, 255, 0.5);
     padding: .5rem 2vw; }
 
-div.cardWrapper {
+#cardWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+div#myCards {
+  background-color: rgba(203, 203, 203, 0.5);
   display: grid;
   grid-template-columns: 1fr; }
 
@@ -389,7 +399,10 @@ div.info {
 
 .icon {
   float: left;
-  font-size: 1.5rem; }
+  width: 2rem; }
+
+.callIcon {
+  width: 2rem; }
 
 div span p {
   padding-left: 1.6rem; }
@@ -426,8 +439,13 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
-  main div.cardWrapper {
+  div#myCards {
     grid-template-columns: 1fr 1fr; }
+    div#myCards .hotels {
+      max-height: 200px;
+      padding: 0 .75rem; }
+    div#myCards .info {
+      padding: 1rem; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
@@ -439,6 +457,11 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
+  nav {
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */

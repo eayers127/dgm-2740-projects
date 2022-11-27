@@ -19,10 +19,31 @@
 
 /*----------- MAIN --------------*/
 main{
-    div.cardWrapper{
-        grid-template-columns: 1fr 1fr;
-    }
+    
+    // .info, .figureTag{
+    //     // display: flex;
+    //     // flex-wrap: wrap;
+    //     grid-template-columns: auto auto;
+    //     background-color: rgb(223, 223, 223);
+    //     flex-basis: 30%;
+    // }
+    // #cardWrapper{
+    //     grid-template-columns: 1fr 1fr;
+    //     // background-color: rgb(223, 223, 223);
+        
+    // }
 }
+
+div#myCards{
+    grid-template-columns: 1fr 1fr;
+    .hotels{
+        max-height: 200px;
+        padding: 0 .75rem;
+    }
+    .info{padding:1rem;}
+}
+
+
 
 
 /*----------- FOOTER --------------*/

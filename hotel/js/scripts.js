@@ -22,32 +22,44 @@ for(i = 0; i < myList.length; i++){
   let phoneTag = document.createElement("p");
   phoneTag.textContent = myList[i].phone;
 
+  let myCarIcon = document.createElement("img");
+  myCarIcon.src = "images/car.svg"
+  myCarIcon.className = "icon"
+
+  let myCallIcon = document.createElement("img");
+  myCallIcon.src = "images/call.svg"
+  myCallIcon.className = "callIcon"
+
   let cardInfo = document.createElement("div");
   cardInfo.className = "info";
+  cardInfo.appendChild(myCarIcon);
+  cardInfo.appendChild(myCallIcon);
   cardInfo.appendChild(addressTag);
   cardInfo.appendChild(phoneTag);
   cardInfo.appendChild(cityTag);
 
-  let myCarIcon = document.createElement("img");
-  myCarIcon.src = 
-  myCarIcon.className = "icon"
+
+ 
   
 
 
     let myImageTag = document.createElement("img");
     myImageTag.src = myList[i].photo;
+    myImageTag.className="hotels"
 
     let myCaptionTag = document.createElement("figcaption");
     myCaptionTag.textContent = myList[i].name;
 
     let myFigureTag = document.createElement("figure");
+    myFigureTag.className = "figureTag";
     myFigureTag.appendChild(myImageTag);
     myFigureTag.appendChild(myCaptionTag);
     
     let divWrapper = document.createElement("div");
-    divWrapper.className = "cardWrapper";
-    document.getElementById('myCards').appendChild(myFigureTag);
-    document.getElementById('myCards').appendChild(cardInfo);
+    divWrapper.appendChild(myFigureTag);
+    divWrapper.appendChild(cardInfo)
+    document.getElementById('myCards').appendChild(divWrapper);
+    // document.getElementById('myCards').appendChild(cardInfo);
 
     
 }

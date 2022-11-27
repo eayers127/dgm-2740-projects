@@ -22,17 +22,20 @@ header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: rgb(153, 153, 153);
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 999;
+    span{padding:.5rem;}
+    
 }
 nav ul {
     display: flex;
+    list-style: none;
 }
 nav ul li {
-    flex-basis: 33.3%;
+    flex-basis: 31.3%;
 }
 nav ul li a {
     display: block;
@@ -41,15 +44,17 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     width: 100%;
+    text-align: center;
+    
 }
 
 nav ul li a:hover {
-    background-color: #eee;
+    background-color: darken(rgb(24, 213, 255), 15%);
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+    background-color: rgb(24, 213, 255);
+    color: rgb(0, 0, 0);
 }
 /*----------- MAIN --------------*/
 main {
@@ -75,12 +80,16 @@ figure{
 }
 }//end of myCards
 
-div.cardWrapper{
+#cardWrapper{
     display: grid;
     grid-template-columns: 1fr;
-
+    background-color: rgba(255,255,255,0.5);
 }
-
+div#myCards{
+    background-color: rgba(203, 203, 203, 0.5);
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 div.info{
     display: grid;
@@ -88,7 +97,10 @@ div.info{
 }
 .icon{
     float: left;
-    font-size: 1.5rem;
+    width: 2rem;
+}
+.callIcon{
+    width: 2rem;
 }
 div span p{
     padding-left: 1.6rem;
