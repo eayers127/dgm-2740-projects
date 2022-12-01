@@ -32,13 +32,14 @@ header {
     // padding: .5rem 2%;
     height: 140px;
     color:rgb(255, 255, 255);
+    margin-left: 0;
     
     h1 {
         background-color: rgba(0, 0, 0, 0.6);
         padding: 1rem 2vw;
         font-size: 1.4rem;
         width: 100vw;
-
+        margin-left: 0;
         
     }
 }
@@ -140,6 +141,13 @@ main {
             background-color: lighten(orange, 10%);
         }
     }
+
+    img.money{transition: all 0.3s ease-in-out 0s;}
+    img.money:hover{
+        transform: rotate(360deg);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
     div.card:hover img{animation: bounce 2s 1;}
     img{
         position:relative;
@@ -151,6 +159,8 @@ main {
         75%{bottom: 10px; animation-timing-function: ease-in;}
         100%{bottom: 0px;}
     }
+
+    
 }
 
 
