@@ -1,6 +1,17 @@
 /* NAVIGATION STUFF GOES HERE  */
+nav{
+    button{display: none;}
+    
+}
+nav ul{
+    display: flex;
+    margin-left: 2%;
+}
+nav ul li{
+    border-right: 1px solid gray;
+}
 
-
-.cards div{
+/*Main*/
+div.cards div{
     flex-basis: 48%;
 }
