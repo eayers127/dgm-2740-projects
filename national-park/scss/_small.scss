@@ -142,15 +142,21 @@ main {
         }
     }
 
-    img.money{transition: all 0.3s ease-in-out 0s;}
-    img.money:hover{
-        transform: rotate(360deg);
-        transition: all 0.3s ease-in-out 0s;
+    img.money{transition: transform 2s;}
+    img.money:hover{ 
+        transform: scale(2);
+        // transition: all 0.3s ease-in-out 0s;
     }
 
-    div.card:hover img{animation: bounce 2s 1;}
+   
+
+    div.card:hover img{
+        animation: bounce 2s 1;
+        transform: scale(1.25);
+    }
     img{
         position:relative;
+        transition: transform 3s;
     }
     @keyframes bounce{
         0%{bottom: 0px; animation-timing-function: ease-out;}
