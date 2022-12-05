@@ -6,10 +6,55 @@ nav{
 nav ul{
     display: flex;
     margin-left: 2%;
+    border-left: 1px solid gray;
 }
 nav ul li{
     border-right: 1px solid gray;
 }
+
+nav ul li a{
+    display: block;
+    padding: .9rem 1.2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s linear;
+}
+
+nav ul li a:hover{
+    background-color: darken(rgb(78, 78, 255), 5%);
+    color: white;
+}
+
+#primaryNav li.parent > a:after{
+    content: "\25BC";
+    font-size: .65rem;
+    float: left;
+    padding: 0 .25rem;
+}
+
+ul li ul{
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($primaryColor, 5%);
+    border: none;
+    width: 14rem;
+    position: absolute;
+    left: -999rem;
+    z-index: 99;
+}
+
+ul li ul li{
+    border-right: none;
+    border-top: 1px solid black;
+
+}
+
+ul li:hover ul{
+    left: auto;
+    margin-left: 0;
+}
+
 
 /*Main*/
 div.cards div{

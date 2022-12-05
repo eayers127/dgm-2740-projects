@@ -3,7 +3,7 @@
 
 // must be 1px less that the medium css breakpoint!!!
 @media only screen and (max-width: 34.9375rem) {
-	nav {background-color: $menuColor;}
+	nav {background-color: lighten($primaryColor, 20%);}
 
 /* Navigation Button  -------------------------------------------------------- */    
 
@@ -14,7 +14,6 @@ nav button {
     background: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #FFF;
 	cursor:pointer;
 }
 
@@ -48,8 +47,8 @@ nav button {
 	/* Submenus – optional .parent class indicates dropdowns */
 	#primaryNav > li:hover > a {background: rgba(0,0,0,.5);}
 	#primaryNav li.parent > a:after {
-        font-size: .75rem;
-		content: "\25BC";
+        font-size: 1rem;
+		content: "\22EE";
 		color: rgba(255,255,255,.5);
 		float: right;
 	}

@@ -15,15 +15,19 @@ body {
 
 /* HEADER  */
 header {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
     display: grid;
-    // grid-template-columns: 51px auto;
-    // align-items: center;
-	padding: .5rem 0;
+	padding: .5rem 2vw;
+    height: 100px;
 	h1 {
         font-size: 1.6rem;
         font-weight: $lightWeight;
-        color: $secondaryColor;
+        color: darken($secondaryColor, 30%);
+        text-decoration: none;
+        background-color: rgba(255,255,255,0.7);
     }
+    h2{background-color: rgba(255,255,255,0.7);}
 } // end header
 
 /* NAVIGATION STUFF GOES HERE  */
@@ -93,7 +97,7 @@ main {
         text-align: center;
         // flex-basis: 100%;
         border: 2px solid white;
-        // width: 100%;
+        width: 100%;
         justify-content: center;
         h3{
             color: white;
