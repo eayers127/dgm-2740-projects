@@ -1,0 +1,55 @@
+/* Header STUFF GOES HERE  */
+#headerWrapper{
+    border-bottom: 1px solid #eee;
+}
+header{
+    grid-template-columns: 100px auto auto;
+    div#phone{
+        display:block;
+        justify-self: end;
+        a{
+            color: $secondaryColor;
+            text-decoration: none;
+            font-weight: $normalWeight;
+            font-size: 1.5rem;
+        }
+        a:hover{
+            color: $primaryColor;
+        }
+    }
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav{
+    height: auto;
+    ul{
+        display: flex;
+        justify-content: end;
+        border: none;
+        li{border:none;}
+    }
+}
+
+div#hamburger, div#closex{
+    display: none;
+}
+
+/* Main */
+// main{
+//     display:grid;
+//     div.card{
+//        flex-basis: 21%; 
+//     }
+// }
+
+/* Columns */
+@for $i from 0 through 12{
+    $w:($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
+
+/* Structure STUFF GOES HERE  */
+div#headerWrapper{grid-row-start: 1;}
+div#navWrapper{grid-row-start: 2;}
+div#mainWrapper{grid-row-start: 3;}
+div#footerWrapper{grid-row-start: 4;}

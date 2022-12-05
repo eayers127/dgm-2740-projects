@@ -1,0 +1,20 @@
+header, nav, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+/* Main */
+// main{
+//     div.card{
+//        flex-basis: 31%; 
+//     }
+// }
+
+/* Columns */
+@for $i from 0 through 12{
+    $w:($i / 12) * 100%;
+    .large-#{$i} {flex-basis: $w;}
+}
