@@ -131,8 +131,7 @@ nav ul {
   padding: 0; }
 
 nav ul li a.active {
-  background-color: #6868ff;
-  color: white; }
+  background-color: #6868ff; }
 
 nav ul li a {
   display: block;
@@ -184,7 +183,7 @@ main {
     width: 100%;
     justify-content: center; }
     main div.cards div h3 {
-      color: white;
+      color: black;
       padding: 1rem; }
   main div.cards img {
     padding: 1rem 0 0 0;

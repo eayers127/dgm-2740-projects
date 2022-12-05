@@ -39,7 +39,7 @@ nav ul{
 }
 nav ul li a.active{
     background-color: lighten(rgb(78, 78, 255), 5%);
-    color: white;
+    
 }
 nav ul li a{
     display: block;
@@ -100,7 +100,7 @@ main {
         width: 100%;
         justify-content: center;
         h3{
-            color: white;
+            color: black;
             padding: 1rem;
         }
     }
