@@ -18,3 +18,11 @@ header, nav, main {
     $w:($i / 12) * 100%;
     .large-#{$i} {flex-basis: $w;}
 }
+
+div.imageGrid{
+    grid-template-columns: 1fr 1fr 1fr;
+    .lead{
+        grid-column: 3 / span 1;
+        grid-row: 1 /span 2;
+    }
+}

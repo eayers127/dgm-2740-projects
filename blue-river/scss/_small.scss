@@ -4,6 +4,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+
 /* BODY  */
 body {
     display: grid;
@@ -18,17 +19,19 @@ body {
 div#headerWrapper{grid-row-start: 1;}
 header {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px auto 44px;
     align-items: center;
-	padding: .5rem 2vw;
+	padding: 1rem;
     div#phone{
         display: none;
     }
 	h1 {
         font-size: 1.6rem;
         font-weight: $lightWeight;
-        padding-left: .5rem;
         color: $primaryColor;
+    }
+    h2{
+        letter-spacing: .5rem;
     }
 } // end header
 
@@ -46,7 +49,6 @@ div#hamburger a, div#closex a{
 
 nav{
     height: 100vh;
-    background-color: lighten(rgb(0, 109, 171), 15%);
     ul{
         border-bottom: 1px solid #eee;
     }
@@ -73,6 +75,7 @@ nav{
 }
 
 /* Main */
+
 div#divWrapper{
     background-color: black;
 }
@@ -109,15 +112,21 @@ div.grid{
     display: flex;
     flex-wrap: wrap;
 }
+.mainArea{
+    h1{
+        color: $primaryColor;
+        margin: 0;
+        padding: 0 0 2rem 0;
+    }
+    padding-left: 1rem;
+}
 div.card{
-    border: 1px solid rgb(190, 190, 190); 
-    background-color: rgb(173, 173, 173);
     h2{color: rgb(0, 109, 171);}
     section{
-        background-color: #444;
         color: rgb(225, 225, 225);
         padding-top: 3rem;
         padding: 1rem 0;
+        
     }
     a{
         color:#1b1b1b;
@@ -156,15 +165,22 @@ div.flexed{
     .small-#{$i} {flex-basis: $w;}
 }
 
-.jumbotron{
-    background-color: darken($accent, 40%);
-    p{
-        color: white;
-        padding: 2rem 0;
+div.imageGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    span{
+        display: block;
+        text-align: center;
+        font-size: .75rem;
     }
-    h2{
-        color:white;
-    }
+    .lead, .secondary{padding: .5rem 2vw;}
+    .secondary img, .lead img{width: 100%;}
+    .lead{grid-column: 1/span 2;}
+}//end grid
+
+.storeLogos{
+    padding: 1rem;
 }
 
 .boxes{
@@ -176,10 +192,7 @@ div.flexed{
     font-weight: $normalWeight;
 }
 
-.faces{
-    max-width: 198px;
-    max-height: 220px;
-}
+
 
 .blogs{
     max-width: 300px;

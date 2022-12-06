@@ -111,16 +111,17 @@ div#headerWrapper {
 
 header {
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 100px auto 44px;
   align-items: center;
-  padding: .5rem 2vw; }
+  padding: 1rem; }
   header div#phone {
     display: none; }
   header h1 {
     font-size: 1.6rem;
     font-weight: 300;
-    padding-left: .5rem;
-    color: #ae1e1e; }
+    color: #0480b1; }
+  header h2 {
+    letter-spacing: .5rem; }
 
 /* NAVIGATION STUFF GOES HERE  */
 div#navWrapper {
@@ -135,8 +136,7 @@ div#hamburger a, div#closex a {
   text-align: right; }
 
 nav {
-  height: 100vh;
-  background-color: #009ef8; }
+  height: 100vh; }
   nav ul {
     border-bottom: 1px solid #eee; }
   nav ul li {
@@ -148,7 +148,7 @@ nav {
     text-decoration: none;
     text-align: right; }
   nav ul li.active a {
-    background-color: #e15151;
+    background-color: #21bdfa;
     color: #111; }
   nav ul li a:hover {
     background-color: #7a7a7a;
@@ -181,21 +181,24 @@ div.grid {
   display: flex;
   flex-wrap: wrap; }
 
-div.card {
-  border: 1px solid #bebebe;
-  background-color: #adadad; }
-  div.card h2 {
-    color: #006dab; }
-  div.card section {
-    background-color: #444;
-    color: #e1e1e1;
-    padding-top: 3rem;
-    padding: 1rem 0; }
-  div.card a {
-    color: #1b1b1b; }
+.mainArea {
+  padding-left: 1rem; }
+  .mainArea h1 {
+    color: #0480b1;
+    margin: 0;
+    padding: 0 0 2rem 0; }
+
+div.card h2 {
+  color: #006dab; }
+div.card section {
+  color: #e1e1e1;
+  padding-top: 3rem;
+  padding: 1rem 0; }
+div.card a {
+  color: #1b1b1b; }
 
 button {
-  background-color: #ae1e1e;
+  background-color: #0480b1;
   color: white;
   padding: 1rem 3rem;
   margin: 1rem;
@@ -204,7 +207,7 @@ button {
 button:hover {
   cursor: pointer;
   background-color: white;
-  color: #ae1e1e; }
+  color: #0480b1; }
 
 /* Columns */
 div.flexed {
@@ -258,13 +261,23 @@ div.flexed {
 .small-12 {
   flex-basis: 100%; }
 
-.jumbotron {
-  background-color: #203541; }
-  .jumbotron p {
-    color: white;
-    padding: 2rem 0; }
-  .jumbotron h2 {
-    color: white; }
+div.imageGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; }
+  div.imageGrid span {
+    display: block;
+    text-align: center;
+    font-size: .75rem; }
+  div.imageGrid .lead, div.imageGrid .secondary {
+    padding: .5rem 2vw; }
+  div.imageGrid .secondary img, div.imageGrid .lead img {
+    width: 100%; }
+  div.imageGrid .lead {
+    grid-column: 1/span 2; }
+
+.storeLogos {
+  padding: 1rem; }
 
 .boxes {
   background-color: #305164;
@@ -273,10 +286,6 @@ div.flexed {
   color: white;
   border: solid white;
   font-weight: 500; }
-
-.faces {
-  max-width: 198px;
-  max-height: 220px; }
 
 .blogs {
   max-width: 300px;
@@ -297,7 +306,7 @@ div.social a {
   text-decoration: none; }
 
 div.social a:hover {
-  color: #e15151; }
+  color: #21bdfa; }
 
 div#footerWrapper {
   grid-row-start: 3;
@@ -347,7 +356,7 @@ footer {
         font-weight: 500;
         font-size: 1.5rem; }
       header div#phone a:hover {
-        color: #ae1e1e; }
+        color: #0480b1; }
 
   /* NAVIGATION STUFF GOES HERE  */
   nav {
@@ -460,6 +469,12 @@ footer {
     flex-basis: 91.6666666667%; }
 
   .large-12 {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+
+  div.imageGrid {
+    grid-template-columns: 1fr 1fr 1fr; }
+    div.imageGrid .lead {
+      grid-column: 3 / span 1;
+      grid-row: 1 /span 2; } }
 
 /*# sourceMappingURL=styles.css.map */
