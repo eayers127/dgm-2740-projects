@@ -178,7 +178,7 @@ div.imageGrid{
     .graph{
         figure{text-align: center;}
         button{
-            background-color: $primaryColor;
+            background-color: darken($primaryColor, 10%);
             color: white;
             margin: 1rem;
             padding: 0.5rem 4.2rem;
