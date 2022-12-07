@@ -19,9 +19,9 @@ body {
 div#headerWrapper{grid-row-start: 1;}
 header {
     display: grid;
-    grid-template-columns: 100px auto 44px;
+    grid-template-columns: 70px auto 44px;
     align-items: center;
-	padding: 1rem;
+	padding: 1rem 2vw;
     div#phone{
         display: none;
     }
@@ -31,7 +31,8 @@ header {
         color: $primaryColor;
     }
     h2{
-        letter-spacing: .5rem;
+        letter-spacing: .4rem;
+        text-transform: uppercase;
     }
 } // end header
 
@@ -76,6 +77,11 @@ nav{
 
 /* Main */
 
+div.mainPhoto{
+    background-image: url('../images/header-assets/header-small.jpg');
+    height: 140px;
+}
+
 div#divWrapper{
     background-color: black;
 }
@@ -85,10 +91,11 @@ div.firstBox{
     font-weight: bold;
     font-size: 1.3rem;
     padding-bottom: .3rem;
+    padding-left: 2vw;
     }
     p{
         color:white;
-        padding-left: none;
+        padding-left: 2vw;
     }
     ul{
         padding: 2rem;
@@ -195,9 +202,8 @@ div.imageGrid{
 
 
 .blogs{
-    max-width: 300px;
-    max-height: 240px;
-    
+    width: 100%;
+    padding: .5rem;
 }
 
 /* Footer */

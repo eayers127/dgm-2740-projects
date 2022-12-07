@@ -42,6 +42,11 @@ div#hamburger, div#closex{
 //     }
 // }
 
+div.mainPhoto{
+    background-image: url('../images/header-assets/header-medium.jpg');
+    height: 240px;
+}
+
 /* Columns */
 @for $i from 0 through 12{
     $w:($i / 12) * 100%;

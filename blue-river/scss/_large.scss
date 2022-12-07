@@ -12,6 +12,10 @@ header, nav, main {
 //        flex-basis: 31%; 
 //     }
 // }
+div.mainPhoto{
+    background-image: url('../images/header-assets/header-large.jpg');
+    height: 385px;
+}
 
 /* Columns */
 @for $i from 0 through 12{
