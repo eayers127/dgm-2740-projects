@@ -30,3 +30,12 @@ div.imageGrid{
         grid-row: 1 /span 2;
     }
 }
+
+div.imageGrid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    .graph{grid-column: 3/span 1;}
+    .graph{grid-row: 1/span 2;}
+    .support{grid-column: 1/span 2;}
+
+}//end grid

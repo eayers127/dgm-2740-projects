@@ -53,6 +53,15 @@ div.mainPhoto{
     .medium-#{$i} {flex-basis: $w;}
 }
 
+div.imageGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    .graph{grid-column: 2/span 1;}
+    .graph{grid-row: 1/span 2;}
+    .support{grid-column: 1/span 2;}
+}//end grid
+
 /* Structure STUFF GOES HERE  */
 div#headerWrapper{grid-row-start: 1;}
 div#navWrapper{grid-row-start: 2;}

@@ -152,8 +152,9 @@ nav {
     background-color: #21bdfa;
     color: #111; }
   nav ul li a:hover {
-    background-color: #7a7a7a;
-    color: white; }
+    background-color: #72a1bb;
+    color: white;
+    cursor: pointer; }
 
 /* Main */
 div.mainPhoto {
@@ -195,25 +196,15 @@ div.grid {
     padding: 0 0 2rem 0; }
 
 div.card h2 {
-  color: #006dab; }
+  color: #0480b1;
+  padding-left: 2%;
+  font-size: 1.4rem; }
 div.card section {
   color: #e1e1e1;
   padding-top: 3rem;
   padding: 1rem 0; }
 div.card a {
   color: #1b1b1b; }
-
-button {
-  background-color: #0480b1;
-  color: white;
-  padding: 1rem 3rem;
-  margin: 1rem;
-  border-radius: 8%; }
-
-button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #0480b1; }
 
 /* Columns */
 div.flexed {
@@ -271,16 +262,35 @@ div.imageGrid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto; }
-  div.imageGrid span {
-    display: block;
-    text-align: center;
-    font-size: .75rem; }
-  div.imageGrid .lead, div.imageGrid .secondary {
-    padding: .5rem 2vw; }
-  div.imageGrid .secondary img, div.imageGrid .lead img {
+  div.imageGrid .graph, div.imageGrid .secondary {
+    padding: .5rem 2%; }
+  div.imageGrid .secondary img, div.imageGrid .graph img {
     width: 100%; }
-  div.imageGrid .lead {
-    grid-column: 1/span 2; }
+  div.imageGrid .graph {
+    grid-column: 1/span 1; }
+  div.imageGrid .graph figure {
+    text-align: center; }
+  div.imageGrid .graph button {
+    background-color: #0480b1;
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem 4.2rem;
+    border-radius: 12px;
+    position: relative;
+    left: 18%;
+    border: none;
+    font-size: 1.4rem; }
+  div.imageGrid .graph button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #0480b1;
+    border: 1px solid #0480b1; }
+  div.imageGrid h2 {
+    padding: 1rem 0 0 0;
+    color: #0480b1;
+    font-size: 1.4rem; }
+  div.imageGrid p {
+    padding-left: 0; }
 
 .storeLogos {
   padding: 1rem; }
@@ -298,26 +308,6 @@ div.imageGrid {
   padding: .5rem; }
 
 /* Footer */
-div.social {
-  background-color: #a3a3a3;
-  display: flex;
-  padding: 1rem 0;
-  margin-top: 1rem; }
-
-div.social a {
-  flex-basis: 25%;
-  text-align: center;
-  color: white;
-  font-size: 3rem;
-  text-decoration: none; }
-
-div.social a:hover {
-  color: #21bdfa; }
-
-div#footerWrapper {
-  grid-row-start: 3;
-  background-color: #1b1b1b; }
-
 /* MAIN  */
 main p {
   padding: .5rem 2vw;
@@ -336,15 +326,13 @@ main .hero img {
 
 /* FOOTER  */
 #footerWrapper {
-  background-color: #1b1b1b; }
+  background-image: linear-gradient(#0480b1, #02384d); }
 
 footer {
-  font-size: .85rem;
-  padding: 1rem 0;
-  color: #bbb;
-  text-align: center; }
-  footer a {
-    color: #eee; }
+  font-size: 1.2rem;
+  color: #eee;
+  text-align: center;
+  padding: 1rem; }
 
 @media only screen and (min-width: 35rem) {
   /* Header STUFF GOES HERE  */
@@ -422,6 +410,17 @@ footer {
   .medium-12 {
     flex-basis: 100%; }
 
+  div.imageGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+    div.imageGrid .graph {
+      grid-column: 2/span 1; }
+    div.imageGrid .graph {
+      grid-row: 1/span 2; }
+    div.imageGrid .support {
+      grid-column: 1/span 2; }
+
   /* Structure STUFF GOES HERE  */
   div#headerWrapper {
     grid-row-start: 1; }
@@ -489,6 +488,16 @@ footer {
     grid-template-columns: 1fr 1fr 1fr; }
     div.imageGrid .lead {
       grid-column: 3 / span 1;
-      grid-row: 1 /span 2; } }
+      grid-row: 1 /span 2; }
+
+  div.imageGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; }
+    div.imageGrid .graph {
+      grid-column: 3/span 1; }
+    div.imageGrid .graph {
+      grid-row: 1/span 2; }
+    div.imageGrid .support {
+      grid-column: 1/span 2; } }
 
 /*# sourceMappingURL=styles.css.map */
