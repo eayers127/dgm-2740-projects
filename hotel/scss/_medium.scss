@@ -37,8 +37,8 @@ main{
 div#myCards{
     grid-template-columns: 1fr 1fr;
     .hotels{
-        max-height: 200px;
         padding: 0 .75rem;
+        height: 341px;
     }
     .info{padding:1rem;}
 }
