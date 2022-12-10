@@ -154,9 +154,8 @@ main {
         100%{filter: grayscale(0)}
     }
 
-   
 
-    div.card:hover img{
+    div.card img{
         animation: scales 2s 1;
     }
     img{
