@@ -164,8 +164,8 @@ main {
         transition: transform 3s;
     }
     @keyframes scales{
-        from{scale: 1.5; animation-timing-function: ease-out;}
-        to{scale: 1; animation-timing-function: ease-in;}
+        from{transform: scale(1.5); animation-timing-function: ease-out;}
+        to{transform: scale(1); animation-timing-function: ease-in;}
     }
 
     
