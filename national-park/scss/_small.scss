@@ -144,26 +144,28 @@ main {
 
     img.money{transition: transform 2s;}
     img.money:hover{ 
-        transform: scale(2);
-        // transition: all 0.3s ease-in-out 0s;
+        position: relative;
+        animation: pulse ease-in-out 2s forwards;
+    }
+
+    @keyframes pulse{
+        0%{filter: grayscale(.8)};
+        50%{filter: grayscale(.5)}
+        100%{filter: grayscale(0)}
     }
 
    
 
     div.card:hover img{
-        animation: bounce 2s 1;
-        transform: scale(1.25);
+        animation: scales 2s 1;
     }
     img{
         position:relative;
         transition: transform 3s;
     }
-    @keyframes bounce{
-        0%{bottom: 0px; animation-timing-function: ease-out;}
-        25%{bottom: 20px; animation-timing-function: ease-in;}
-        50%{bottom: 0px; animation-timing-function: ease-out;}
-        75%{bottom: 10px; animation-timing-function: ease-in;}
-        100%{bottom: 0px;}
+    @keyframes scales{
+        from{scale: 1.5; animation-timing-function: ease-out;}
+        to{scale: 1; animation-timing-function: ease-in;}
     }
 
     
