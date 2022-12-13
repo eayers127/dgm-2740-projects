@@ -19,11 +19,10 @@ header {
     grid-template-columns: 100px auto;
     align-items: center;
 	padding: .5rem 2vw;
-    background-color: $secondaryColor;
+    background-color: lighten($secondaryColor, 10%);
 	h1 {
         font-size: 2.5rem;
-        font-weight: $lightWeight;
-        color: $primaryColor;
+        color: darken($primaryColor, 15%);
     }
     h2{font-size: 1.4rem;}
     figure.logo{
