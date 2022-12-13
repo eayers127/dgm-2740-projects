@@ -4,3 +4,17 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+
+nav{
+    button{display: none;}
+    ul, ul.open{
+        display: flex;
+        border: none;
+        margin-right: 2vw;
+        
+    }
+    ul li{
+        border: none;
+    }
+}//end nav
+/*main*/

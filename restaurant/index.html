@@ -19,11 +19,14 @@
 	<header class="clearfix">
         <figure class="logo">
            <img src="images/logo.png" alt="logo"
-           srcset="images/logo-assests/logo1.png 1x,
-           images/logo-assests/logo2.png 2x,
-           images/logo-assests/logo3.png 3x">
+           srcset="images/logo1.png 1x,
+           images/logo2.png 2x,
+           images/logo3.png 3x">
         </figure>
-		<h1>Design Thinking</h1>
+        <div>
+		<h1>Restaurant</h1>
+        <h2>Affordable Eats</h2>
+        </div>
 	</header>
 </div><!-- end header wrapper -->
 
@@ -31,36 +34,46 @@
     
 <div id="navWrapper">
     <nav>
-        <ul>
-        <li><a href="#">Clients</a>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Best Practices</a></li>
-        <li><a href="#">Our Team</a></li>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+        <li><a href="#">Menu</a>
+        <li><a href="#">Locations</a></li>
+        <li class="active"><a href="#">Our Founder</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
     </nav>
 </div> <!-- end nav wrapper -->
 
 <div id="mainWrapper">
-    <main>
+    <main class="clearfix">
         <picture class="hero">
-            <img src="images/hero.webp" width="1600" height="600">
+            <source media="(max-width: 200px" srcset="images/hero200.jpg">
+            <source media="(max-width: 500px" srcset="images/hero500.jpg">
+            <source media="(max-width: 800px" srcset="images/hero800.jpg">
+            <img src="images/hero1100.jpg" alt="Restaurant">
         </picture>
-
-        <figure class="myPhoto">
-            <img src="">
-        </figure>
         
-        <h1>Best Practices</h1>
-        <p>Usability testing refers to evaluating a service or product by testing it with web users. Typically, during a testing, participants will try to complete similar tasks while observers watch, listen, and record the screen.  The outcome is to identify problems with the design, collect qualitative and quantitative data, and determine how well the participant's like product.</p>
+        <h1>Our Founder</h1>
+        <picture class="founder">
+            <source media="(max-width: 400px" srcset="images/founder200.jpg">
+            <source media="(max-width: 1000px" srcset="images/founder500.jpg">
+            <source media="(max-width: 1600px" srcset="images/founder800.jpg">
+            <img src="images/founder1100.jpg" alt="Founder">
+        </picture>
+        <!-- <figure>
+            <img src="images/founder.jpg" alt="Founder" sizes="50vw"
+            srcset="images/founder200.jpg 200w,
+                    images/founder500.jpg 500w,
+                    images/founder800.jpg 800w,
+                    images/founder1100.jpg 1100w
+            ">
+        </figure> -->
 
-        <p>Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core competencies. Distinctively coordinate team driven portals rather than synergistic processes.</p>
+        <p>Blandit turpis cursus in hac habitasse platea dictumst. Sollicitudin tempor id eu nisl nunc. Molestie nunc non blandit massa enim nec dui. Donec massa sapien faucibus et molestie ac feugiat sed lectus. At tellus at urna condimentum mattis pellentesque id nibh. Aliquet nibh praesent tristique magna sit. Vivamus arcu felis bibendum ut. Vitae aliquet nec ullamcorper sit amet. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.</p>
+        <p>Leo in vitae turpis massa sed elementum tempus egestas. Diam maecenas sed enim ut sem viverra aliquet eget. Odio euismod lacinia at quis risus sed vulputate odio ut. Lacus sed turpis tincidunt id. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Elit at imperdiet dui accumsan sit amet. Id volutpat lacus laoreet non curabitur gravida. Ultrices dui sapien eget mi proin sed libero enim. Ultricies mi eget mauris pharetra et ultrices neque. Porta non pulvinar neque laoreet suspendisse. Purus non enim praesent elementum facilisis leo vel fringilla est. Blandit turpis cursus in hac habitasse platea dictumst. Sollicitudin tempor id eu nisl nunc. Molestie nunc non blandit massa enim nec dui. Donec massa sapien faucibus et molestie ac feugiat sed lectus. At tellus at urna condimentum mattis pellentesque id nibh. Aliquet nibh praesent tristique magna sit. Vivamus arcu felis bibendum ut. Vitae aliquet nec ullamcorper sit amet. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.</p>
+        <p>Id volutpat lacus laoreet non curabitur gravida. Ultrices dui sapien eget mi proin sed libero enim. Ultricies mi eget mauris pharetra et ultrices neque. Porta non pulvinar neque laoreet suspendisse. Purus non enim praesent elementum facilisis leo vel fringilla est. Blandit turpis cursus in hac habitasse platea dictumst. Sollicitudin tempor id eu nisl nunc. Molestie nunc non blandit massa enim nec dui. Donec massa sapien faucibus et molestie ac feugiat sed lectus. At tellus at urna condimentum mattis pellentesque id nibh. Aliquet nibh praesent tristique magna sit. Vivamus arcu felis bibendum ut. Vitae aliquet nec ullamcorper sit amet. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.</p>
 
-        <p>Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic" sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff expertise. Authoritatively exploit transparent users through virtual channels.</p>
 
-        <p>Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize high-quality methodologies for performance based bandwidth.</p>
-
-        <p>Intrinsicly simplify transparent sources rather than principle-centered solutions. Phosfluorescently engineer world-class technologies before scalable markets. Dynamically myocardinate.</p>
 
 
 
@@ -69,10 +82,10 @@
     
 <div id="footerWrapper">
     <footer>
-        <p>Copyright &copy; 2022 Design Thinking Inc. All rights reserved. 
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales</a> | <a href="#">Clients</a></p>
+        <p> &copy; 2022 &bull; Ethan Ayers &bull; Login</p>
     </footer>
 </div> <!-- end footer wrapper -->
-   
+
+<script src="js/scripts.js"></script>
 </body>
 </html> 
