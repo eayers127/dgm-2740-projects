@@ -156,13 +156,15 @@ main {
 
 
     div.card img{
-        animation: scales 2s 1;
+        animation: cross 4s 1;
     }
     img{
         position:relative;
         transition: transform 3s;
     }
-    @keyframes scales{
+    @keyframes cross{
+        0%{right: 2000px;}
+        100%{right: 0px;}
         from{transform: scale(1.5); animation-timing-function: ease-out;}
         to{transform: scale(1); animation-timing-function: ease-in;}
     }
